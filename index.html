@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboards Interativos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <!-- links -->
+  <link rel="shortcut icon" href="img/icons8-matemática-50.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+   .card:hover .card-img-top {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.modal-body img {
+      user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Dashboards interativos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pag_mapas.html">Dahsboards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero bg-dark text-white py-2">
+      <div class="container">
+       <h1 class="display-4">Explore Dashboards Interativos</h1>
+  <p class="lead">Relatórios técnicos de maneira visual e interativa.</p>
+      </div>
+    </section>
+
+    
+   <section class="maps py-5" id="pdf" data-aos="zoom-in">
+      <div class="container">
+        <h2 class="mb-4 text-center bg-light">Dashboards interativos</h2>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <div class="card">
+               <img src="img/dash_alfabetização.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">SÉRIE HISTÓRICA ALFABETIZAÇÃO - 1° ANO | (2008 - 2023)</h5>
+                <p class="card-text">dash_alfabetização</p>
+                <p class="card-text"><small class="text-muted">Fonte: SGE/Maracanaú </small></p>
+                <a href="#" class="btn btn-primary" onclick="viewFile('img/dash_alfabetização.jpg')">Visualizar</a>
+                 <a href="https://lookerstudio.google.com/s/rb3WyxemX68" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="img/dash_SPAECE_5_9.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">SÉRIE HISTÓRICA SPAECE (2012 - 2023) - 5° | 9° ANO</h5>
+                <p class="card-text">dash_SPAECE_5_9</p>
+                <p class="card-text"><small class="text-muted">Fonte: SPAECE</small></p>
+                <a href="#" class="btn btn-primary" onclick="showFile('img/dash_SPAECE_5_9.jpg')">Visualizar</a>
+                <a href="https://lookerstudio.google.com/s/hSsqLAOdgyw" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="img/dash_SPAECE_ALFA.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">SÉRIE HISTÓRICA SPAECE-ALFA (2012 - 2023) - 2° ANO</h5>
+                <p class="card-text">dash_SPAECE_ALFA</p>
+                <p class="card-text"><small class="text-muted">Fonte: SPAECE </small></p>
+                <a href="#" class="btn btn-primary" onclick="showFile('img/dash_SPAECE_ALFA.jpg')">Visualizar</a>
+                <a href="https://lookerstudio.google.com/s/mPywZi6UR0o" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="img/dash_SAEB.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">SÉRIE HISTÓRICA PROFICIÊNCIA SAEB(2005 - 2021) - 5° / 9° ANO</h5>
+                <p class="card-text">img/dash_SAEB</p>
+                <p class="card-text"><small class="text-muted">Fonte: SAEB/INEP</small></p>
+                <a href="#" class="btn btn-primary" onclick="showFile('img/dash_SAEB.jpg')">Visualizar</a>
+                 <a href="https://lookerstudio.google.com/s/s9FDJe3t5h0" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="img/dash_IDEB.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">SÉRIE HISTÓRICA NOTA IDEB(2005 - 2021) - 5° / 9° ANO</h5>
+                <p class="card-text">img/dash_IDEB</p>
+                <p class="card-text"><small class="text-muted">Fonte: SAEB/INEP </small></p>
+                <a href="#" class="btn btn-primary" onclick="showFile('img/dash_IDEB.jpg')">Visualizar</a>
+                 <a href="https://lookerstudio.google.com/s/oTvErsLjvsA" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="dash_OBMEP_nacional.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">SÉRIE HISTÓRICA OBMEP NACIONAL (2005 - 2023) | MUNICÍPIOS DO CEARÁ</h5>
+                <p class="card-text">dash_OBMEP_nacional_municipios</p>
+                <p class="card-text"><small class="text-muted">Fonte: OBMEP</small></p>
+                <a href="#" class="btn btn-primary" onclick="showFile('img/dash_OBMEP_nacional.jpg')">Visualizar</a>
+                 <a href="https://lookerstudio.google.com/s/lXVcGohmCS4" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-3 mb-3">
+            <div class="card">
+             <img src="img/dash_OBMEP_regional.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">SÉRIE HISTÓRICA OBMEP REGIONAL 2023 | MUNICÍPIOS DO CEARÁ</h5>
+                <p class="card-text">img/dash_OBMEP_regional</p>
+                <p class="card-text"><small class="text-muted">Fonte: OBMEP</small></p>
+                <a href="#" class="btn btn-primary" onclick="showFile('img/dash_OBMEP_regional.jpg')">Visualizar</a>
+                <a href="https://lookerstudio.google.com/s/v3X7Q4xo0is" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="img/dash_OBMEP_nacional_Maracanaú.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">SÉRIE HISTÓRICA OBMEP NACIONAL (2005 - 2023) | MARACANAÚ</h5>
+                <p class="card-text">img/dash_OBMEP_nacional_Maracanaú</p>
+                <p class="card-text"><small class="text-muted">Fonte: OBMEP</small></p>
+                <a href="#" class="btn btn-primary" onclick="showFile('img/dash_OBMEP_nacional_Maracanaú.jpg')">Visualizar</a>
+                 <a href="https://lookerstudio.google.com/s/mY_JlphGhGg" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="img/dash_escolas_tempo_integral.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">SERIE HISTÓRICA DE ESCOLAS DE TEMPO INTEGRAL</h5>
+                <p class="card-text">img/dash_escolas_tempo_integral</p>
+                <p class="card-text"><small class="text-muted">Fonte: SPAECE</small></p>
+                <a href="#" class="btn btn-primary" onclick="showFile('img/dash_escolas_tempo_integral.jpg')">Visualizar</a>
+                 <a href="https://lookerstudio.google.com/s/g3AHLwXP5Zw" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="img/dash_diagnostica_2024_1.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">RESULTADOS AVALIAÇÃO DIAGNÓSTICA 2024.1</h5>
+                <p class="card-text">img/dash_diagnostica_2024_1</p>
+                <p class="card-text"><small class="text-muted">Fonte: SGE/Maracanaú</small></p>
+                <a href="#" class="btn btn-primary" onclick="showFile('img/dash_diagnostica_2024_1.jpg')">Visualizar</a>
+                <a href="https://lookerstudio.google.com/s/qVHOPRxEMIg" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="img/dash_diagnostica_2023_1_2_lp_mt.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">RESULTADOS AVALIAÇÃO DIAGNÓSTICA 2023.1 / 2023.2</h5>
+                <p class="card-text">img/dash_diagnostica_2023_1_2_lp_mt</p>
+                <p class="card-text"><small class="text-muted">Fonte: SGE/Maracanaú</small></p>
+                <a href="#" class="btn btn-primary" onclick="showFile('img/dash_diagnostica_2023_1_2_lp_mt.jpg')">Visualizar</a>
+                 <a href="https://lookerstudio.google.com/s/tKNBl90KMiQ" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="img/dash_diagnostica_2022_1_lp_mt.jpg" class="card-img-top" alt="Mapa 2">
+              <div class="card-body">
+                <h5 class="card-title">RESULTADOS AVALIAÇÃO DIAGNÓSTICA 2022.1</h5>
+                <p class="card-text">img/dash_diagnostica_2022_1_lp_mt</p>
+                <p class="card-text"><small class="text-muted">Fonte: SGE/Maracanaú</small></p>
+                <a href="#" class="btn btn-primary" onclick="showFile('img/dash_diagnostica_2022_1_lp_mt.jpg')">Visualizar</a>
+                 <a href="https://lookerstudio.google.com/s/stqe_B9fPCY" class="btn btn-warning" target="_blank">acessar</a>
+              </div>
+            </div>
+          </div>
+          <!-- cole aqui outros campos -->
+    </section>
+
+     <div class="modal fade" id="fileModal" tabindex="-1" role="dialog" aria-labelledby="fileModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="fileModalLabel">Visualização do Arquivo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="fileContainer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+   </div>
+  </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2024 Dashboards interativos. Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+           <p>e-mail: suporteteceducacao@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+    function showFile(filePath) {
+      var fileType = filePath.split('.').pop();
+      var fileContainer = document.getElementById('fileContainer');
+
+      if (fileType === 'pdf') {
+        fileContainer.innerHTML = '<iframe src="' + filePath + '" width="100%" height="500px" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>';
+      } else if (fileType === 'jpeg' || fileType === 'jpg' || fileType === 'png') {
+        fileContainer.innerHTML = '<img src="' + filePath + '" class="img-fluid" oncontextmenu="return false;">';
+      }
+
+      $('#fileModal').modal('show');
+    }
+
+    function viewFile(fileUrl) {
+  window.open(fileUrl, '_blank');
+}
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script>
+</body>
+</html>
